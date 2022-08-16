@@ -5,7 +5,7 @@ services:
     image: postgres
     restart: always
     environment:
-      POSTGRES_USER: Arul
+      POSTGRES_USER: :Arul
       POSTGRES_PASSWORD: 123123
       POSTGRES_DB: test_db
     ports:
@@ -16,6 +16,6 @@ services:
     restart: always
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@admin.com
-      PGADMIN_DEFAULT_PASSWORD: 123123
+      PGADMIN_DEFAULT_PASSWORD: root
     ports:
       - "82:80"
